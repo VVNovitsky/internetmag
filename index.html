@@ -21,7 +21,11 @@
         <div class="container header__container">
             <div class="header__box">
                 <img class="header__logo" src="./img/lodo.svg" alt="logo" width="44" height="38">
+
                 <img class="header__search" src="./img/loupe.svg" alt="loupe" width="26" height="28">
+
+                <input class="header__text" type="text">
+
             </div>
             <div class="header__box">
                 <button class="header__button header__ico" type="button"><img src="./img/burger.svg" alt="menu"
@@ -112,7 +116,17 @@
             <ul class="featured__product">
                 <li class="featured__product__product">
                     <a href="#">
-                        <img src="./img/product-1.jpg" alt="photo of product">
+                        <div class="featured__wrapper">
+                            <img src="./img/product-1.jpg" alt="photo of product">
+
+                            <div class="featured__overlay">
+
+                            </div>
+                            <button class="featured__button"><img class="featured__basket" src="./img/basket.svg"
+                                    alt="basket">
+                                Add to Cart
+                            </button>
+                        </div>
                         <h3 class="featured__subtitle">ellery x m'o capsule</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
                             Ellery
@@ -122,7 +136,16 @@
                 </li>
                 <li class="featured__product__product">
                     <a href="#">
-                        <img src="./img/product-2.jpg" alt="photo of product">
+                        <div class="featured__wrapper">
+                            <img src="./img/product-2.jpg" alt="photo of product">
+                            <div class="featured__overlay">
+
+                            </div>
+                            <button class="featured__button"><img class="featured__basket" src="./img/basket.svg"
+                                    alt="basket">
+                                Add to Cart
+                            </button>
+                        </div>
                         <h3 class="featured__subtitle">ellery x m'o capsule</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
                             Ellery
@@ -132,7 +155,17 @@
                 </li>
                 <li class="featured__product__product">
                     <a href="#">
-                        <img src="./img/product-3.jpg" alt="photo of product">
+                        <div class="featured__wrapper">
+                            <img src="./img/product-3.jpg" alt="photo of product">
+                            <div class="featured__overlay">
+
+                            </div>
+                            <button class="featured__button"><img class="featured__basket" src="./img/basket.svg"
+                                    alt="basket">
+                                Add to Cart
+                            </button>
+                        </div>
+
                         <h3 class="featured__subtitle">ellery x m'o capsule</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
                             Ellery
@@ -172,32 +205,53 @@
                 </li>
             </ul>
         </section>
-        <button type="button"><img src="./img/button.jpg" alt="button"> </button>
-        <section>
-            <h2>Dostavka</h2>
-            <ul>
-                <li>
-                    <img src="./img/delivery.png" alt="delivery">
-                    <h3>Free Delivery</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+        <section class="featured__allproducts">
+            <button type="button" class="featured__allproducts_but">Browse All Product</button>
+        </section>
+        <section class="delivery">
+            <h2 class="visually-hidden">delivery</h2>
+            <ul class="delivery__list">
+                <li class="delivery__item">
+                    <img src="./img/delivery.png" alt="delivery" width="45" height="32">
+                    <h3 class="delivery__subtitle">Free Delivery</h3>
+                    <p class="delivery__text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion with extensive
                         models.</p>
                 </li>
-                <li>
-                    <img src="./img/discont.png" alt="discont">
-                    <h3>Sales & discounts</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                <li class="delivery__item">
+                    <img src="./img/discont.png" alt="discont" width="40" height="40">
+                    <h3 class="delivery__subtitle">Sales & discounts</h3>
+                    <p class="delivery__text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion with extensive
                         models.</p>
                 </li>
-                <li>
-                    <img src="./img/quality.png" alt="quality">
-                    <h3>Quality assurance</h3>
-                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                <li class="delivery__item">
+                    <img src="./img/quality.png" alt="quality" width="47" height="35">
+                    <h3 class="delivery__subtitle">Quality assurance</h3>
+                    <p class="delivery__text">Worldwide delivery on all. Authorit tively morph next-generation innov
+                        tion with extensive
                         models.</p>
                 </li>
             </ul>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="subscribe">
+            <div class="subscribe__vestibulum">
+                <div class="subscribe__vestibulum_face"><img src="./img/smile-face.png" alt="face" width="96"
+                        height="96"></div>
+                <p class="subscribe__vestibulum_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<i> a
+                        pulvinar purus condimentum“</i></p>
+            </div>
+            <div class="subscribe__input">
+                <p class="subscribe__input_textsub">
+                    subscribe</p>
+                <p class="subscribe__input_text">for our newletter and promotion</p>
+                <input type="text">
+            </div>
+        </section>
+        <section class="copyright"></section>
+    </footer>
 </body>
 
 </html>
